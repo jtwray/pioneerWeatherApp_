@@ -24,7 +24,7 @@ with open(os.path.join(BASE_DIR, 'secretkey.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -34,15 +34,15 @@ LOGIN_REDIRECT_URL  = '/'
 # Application definition
 
 INSTALLED_APPS = [
-    'weather',
-    'crispy_forms',
-    'django_generate_secret_key',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'weather',
+    'crispy_forms',
+    'django_generate_secret_key'
     
 ]
 
